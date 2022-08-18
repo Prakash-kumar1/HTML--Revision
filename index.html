@@ -123,7 +123,7 @@
 <!-- when we use required , means it is necessary to fill that place without fill that place form not submitted -->
 
 
-<form action="Table.html"  method="post">
+<form action="Table.html"  method="get">
 
     <label for="">Username :</label>
     <input type="text" placeholder="UserName"  required>   <br> <br>
@@ -141,6 +141,10 @@
 <label for="email">email :</label>
 <input type="email" id="email" name="E-mail">  <br> <br>
 
+
+<!-- Creating  Radio Button -->
+
+
 <p>Select Your Gender</p>
 
 <!-- when i click on male , it selected .when i click on Female , it also selected same with trans . so, this is 
@@ -156,20 +160,33 @@ not good . for removing this problem we put the " genderSame value of name in ea
 <label for="trans"> Transgender</label>
 <input type="radio" name="gender" id="trans" value="other">   <br> <br>
 
+
+<!-- Creating  Drop-down  List -->
+
+<label for="age-group">Select your age-group</label>
+<select name="ageGroup-values" id="age-group">
+
+<option value="5-16">Child</option>
+<option value="17-31">Young</option>
+<option value="32-61">Adult</option>
+<option value="65-100">Old</option>
+
+</select>   <br> <br>
+
+
+<label for="religion">Select your religion</label>
+<select name="person" id="religion">
+
+<option value="Ram">Hindu</option>
+<option value="mohmmad">Muslim</option>
+<option value="jesus">Christain</option>
+<option value="nanak">Sikhs</option>
+<option value="mahavir">Jain</option>
+<option value="buddha">Bauodh</option>
+</select>   <br> <br>
+
+
 <input type="submit" value="sign-in">
 </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
