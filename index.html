@@ -117,7 +117,11 @@
 
 <h1>HTML Forms</h1>
 
-<form>
+<!-- action => when we click on sign-in then it go to Table.html .  -->
+<!-- method GET (use name attribute) gives Password and E-mail in Header (URL) section which we put in the form-->
+<!-- method POST  doesn't gives anything in Header (URL) section -->
+
+<form action="Table.html"  method="post">
 
     <label for="">Username :</label>
     <input type="text">   <br> <br>
@@ -130,10 +134,10 @@
     <input type="text" id="mother">   <br> <br>
 
 <label for="password">Password :</label>
-<input type="password" id="password">  <br> <br>
+<input type="password" id="password" name="PassWord">  <br> <br>
 
 <label for="email">email :</label>
-<input type="email" id="email">  <br> <br>
+<input type="email" id="email" name="E-mail">  <br> <br>
 
 <input type="submit" value="sign-in">
 </form>
