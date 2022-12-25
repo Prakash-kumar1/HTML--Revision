@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">                <!-- This is a attribute lang , means language is English  -->
+<html lang="en">                <!-- This is a attribute lang, means language is English  -->
 <head>
     <!-- in head tag we write all meta tags -->
     <meta charset="UTF-8">
@@ -8,6 +8,19 @@
     <title>Document</title>
     <!-- style.css file link here -->
 </head>
+
+<!-- Question no. - 1 =>> What are the semantic tags?
+Answer => The HTML semantics refers to the tags that provide meaning to an HTML page rather than just presentation. 
+It makes HTML more comprehensible by better defining the different sections and layout of web pages. -->
+<!-- example :- section, article, footer, nav, aside, h1 -->
+
+
+<!-- Question no. - 2 =>> What are meta tags in HTML?
+Answer => The <meta> tag defines metadata about an HTML document. Metadata is information about data. 
+<meta> tags always go inside the <head> element, & are typically used to specify character set, page description, 
+keywords, author of the document, and viewport settings. -->
+
+
 <body>
     <!-- whatever written inside tag is kmown as "Content" .Example :-  <open tag> Content </close tag> -->
   
@@ -35,7 +48,9 @@
    <!-- On hovering , for showing tip we use  title  attribute -->
    <p>Click Here to go to <a href="http://google.com" target="_blank" title="Google is one of the most popular Search Engine">Google</a> </p>
 
-<!-- Adding image , In alt always written description of your picture don't write not found , try again like that  -->
+<!-- Adding image, In alt always written description of your picture don't write not found, try again like that -->
+<!-- The alt attribute specifies an alternate text for an image, if the image cannot be displayed. -->
+
 <img src="C:\Users\Monika Priya Singh\OneDrive\Pictures\Screenshots\download.jpg" alt="Beautiful girl" >
 
 <!-- For taking Random and Free images , we use  https://unsplash.com/ -->
@@ -51,7 +66,7 @@
     <li>item-4</li>
 </ol>
 
-<!-- UnOrdered List -->
+<!-- UnOrdered List :- it also known as Bullet List-->
 <ul style="list-style-type: circle;">
     <li>items=>1</li>
     <li>items=>2</li>
@@ -249,3 +264,33 @@ not good . for removing this problem we put the " genderSame value of name in ea
 </body>
 </html>
 
+
+<!-- <link> Tag: This tag is used to establish a connection/relationship between the current document and some external resources that are associated with the webpage. The resource could be a CSS file, an icon used in the site, a manifest, etc -->
+
+<!-- Anchor (<a>) Tag: This anchor tag establishes a hyperlink to an external or internal document of HTML,  -->
+    <!-- an address like email or telephone, and some kind of external URL address.  -->
+
+
+<!-- Difference between <link> tag and <a> tag:
+
+    <link> Tag                                       ||              <a> Tag    
+    
+1.	This tag is used inside the head section.	     ||           This tag is used inside the body section.
+
+2.	It is not displayed on the front end and         ||           The content written inside the anchor tag gets 
+    is just used for internal purposes.	                        displayed in  the frontend.
+
+3.	It establishes the relationship/connection 	      ||          It establishes a path from the current 
+    between two entities.                                       document to somewhere else.
+
+4.	Because of not directly visible to the            ||          Users can click on the content enclosed inside
+    user it is not clickable.	                                this tag to visit the hyperlink.
+
+5.	It is an empty element and can’t                  ||          It is not an empty element, it can have 
+    have nested elements.	                                    some nested elements inside.
+
+6.	It has nothing to do with the block or            ||          It is an inline HTML element.
+    inline properties of HTML elements.
+
+7.	The basic structure of this tag is,                ||         The basic structure of this tag is,
+<link some_attributes_with_value />	                   ||          <a some_attributes_with_value > nestedContent </a> -->
