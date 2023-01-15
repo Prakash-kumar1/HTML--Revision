@@ -1,6 +1,7 @@
 <!-- HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. 
-HTML describes the structure of a Web page.HTML consists of a series of elements. HTML elements 
+HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements 
 tell the browser how to display the content. -->
+
 <!DOCTYPE html>
 <html lang="en">                <!-- This is a attribute lang, means language is English  -->
 <head>
@@ -26,7 +27,16 @@ keywords, author of the document, and viewport settings. -->
 <!-- An HTML tag is a special word or letter surrounded by angle brackets, < and >. -->
 
 <body>
-    <!-- whatever written inside tag is kmown as "Content" .Example :-  <open tag> Content </close tag> -->
+<!-- whatever written inside open and closed tag is kmown as "Content".Example :-  <opentag> Content </closetag> -->
+<!-- 
+        Question no. - 2 =>>        What is difference between tag and element?
+        Tags are used to mark up the start of an HTML element and they are usually enclosed in angle brackets. 
+        An example of a tag is: <h1>.
+        
+    HTML Tags	          ||        HTML Elements	             ||            HTML Attributes
+    HTML tag starts with  ||	Whatever written within a  	     ||        HTML attributes are found only 
+    < and ends with >     ||    HTML tag are HTML elements.      ||            in the starting tag. -->
+ 
   
 <!-- Exercise => 1 -->
 
@@ -134,7 +144,7 @@ keywords, author of the document, and viewport settings. -->
 <!-- action => when we click on sign-in then it go to Table.html .  -->
 <!-- method GET (use name attribute) gives Password and E-mail in Header (URL) section which we put in the form-->
 <!-- method POST  doesn't gives anything in Header (URL) section -->
-<!-- when we use required , means it is necessary to fill that place without fill that place form not submitted -->
+<!-- when we use required, means it is necessary to fill that place without fill that place form not submitted -->
 
 
 <form action="Table.html"  method="get">
@@ -161,7 +171,7 @@ keywords, author of the document, and viewport settings. -->
 
 <p>Select Your Gender</p>
 
-<!-- when i click on male , it selected .when i click on Female , it also selected same with trans . so, this is 
+<!-- when i click on male , it selected .when i click on Female, it also selected same with trans. so, this is 
 not good . for removing this problem we put the " genderSame value of name in each "  -->
 <!-- Sending data to Backend , we use value -->
 
@@ -233,7 +243,7 @@ not good . for removing this problem we put the " genderSame value of name in ea
 
 <!--  Video  tag in HTML -->
 
-<!-- provide width , height will automatically adjust . Controls gives button on video -->
+<!-- provide width, height will automatically adjust. Controls gives button on video -->
 <video  width="250px" controls src="C:\Users\Monika Priya Singh\Videos\Captures\Navigation Bar.mp4"></video>
 <br> <br>
 
@@ -269,7 +279,9 @@ not good . for removing this problem we put the " genderSame value of name in ea
 </html>
 
 
-<!-- <link> Tag: This tag is used to establish a connection/relationship between the current document and some external resources that are associated with the webpage. The resource could be a CSS file, an icon used in the site, a manifest, etc -->
+<!-- <link> Tag: This tag is used to establish a connection/relationship between the current document and some 
+                external resources that are associated with the webpage. The resource could be a CSS file, 
+                an icon used in the site, a manifest, etc -->
 
 <!-- Anchor (<a>) Tag: This anchor tag establishes a hyperlink to an external or internal document of HTML,  -->
     <!-- an address like email or telephone, and some kind of external URL address.  -->
@@ -277,24 +289,43 @@ not good . for removing this problem we put the " genderSame value of name in ea
 
 <!-- Difference between <link> tag and <a> tag:
 
-    <link> Tag                                       ||              <a> Tag    
+    <link> Tag                                         ||              <a> Tag    
     
-1.	This tag is used inside the head section.	     ||           This tag is used inside the body section.
+1.	This tag is used inside the head section.	       ||         This tag is used inside the body section.
 
-2.	It is not displayed on the front end and         ||           The content written inside the anchor tag gets 
-    is just used for internal purposes.	                        displayed in  the frontend.
+2.	It is not displayed on the front end and           ||         The content written inside the anchor tag gets 
+    is just used for internal purposes.	               ||         displayed in  the frontend.
 
-3.	It establishes the relationship/connection 	      ||          It establishes a path from the current 
-    between two entities.                                       document to somewhere else.
+3.	It establishes the relationship/connection 	       ||        It establishes a path from the current 
+    between two entities.                              ||        document to somewhere else.
 
-4.	Because of not directly visible to the            ||          Users can click on the content enclosed inside
-    user it is not clickable.	                                this tag to visit the hyperlink.
+4.	Because of not directly visible to the             ||        Users can click on the content enclosed inside
+    user it is not clickable.	                       ||        this tag to visit the hyperlink.
 
-5.	It is an empty element and can’t                  ||          It is not an empty element, it can have 
+5.	It is an empty element and can’t                   ||        It is not an empty element, it can have 
     have nested elements.	                                    some nested elements inside.
 
-6.	It has nothing to do with the block or            ||          It is an inline HTML element.
+6.	It has nothing to do with the block or             ||        It is an inline HTML element.
     inline properties of HTML elements.
 
-7.	The basic structure of this tag is,                ||         The basic structure of this tag is,
-<link some_attributes_with_value />	                   ||          <a some_attributes_with_value > nestedContent </a> -->
+7.	The basic structure of this tag is,                ||       The basic structure of this tag is,
+    <link some_attributes_with_value />	               ||         <a some_attributes_with_value > nestedContent </a> -->
+
+
+
+<!-- Question no. - 3 =>>      What is a srcset in HTML?
+Answer:-          The srcset attribute specifies the URL of the image to use in different situations. 
+                  This attribute is required when <source> is used in <picture> .
+The HTMLImageElement property srcset is a string which identifies one or more image candidate strings, 
+         separated using commas ( , ) each specifying image resources to use under given circumstances. -->
+
+
+<h1>The picture element</h1>
+
+<p>Resize the browser window to load different images.</p>
+         
+<picture>
+<source media="(min-width:650px)" srcset="C:\Users\Monika Priya Singh\OneDrive\Pictures\Screenshots\ME.jpeg">
+<source media="(min-width:465px)" srcset="C:\Users\Monika Priya Singh\OneDrive\Pictures\Screenshots\linkedin.jpeg">
+<img src="C:\Users\Monika Priya Singh\OneDrive\Pictures\Screenshots\Screenshot(143).png" alt="Flowers" style="width:auto;">
+</picture>
